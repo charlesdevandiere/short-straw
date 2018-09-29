@@ -6,7 +6,9 @@ namespace ShortStraw
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Random rand = new Random();
+            int patsyIndex = rand.Next(args.Length);
+            Console.WriteLine($"Sorry {args[patsyIndex]}!");
         }
     }
 }
